@@ -16,6 +16,12 @@
     <%= f.text_field :title, class: 'form-control', required: true %>
     <%= f.label :host %>
     <%= f.text_field :host, class: 'form-control', required: true %>
+    <%= f.label :description %>
+    <%= f.text_area :description, class: 'form-control', required: true %>
+    <%= f.label :my_review %>
+    <%= f.text_area :my_review %>
+    <%= f.label :url %>
+    <%= f.text_field :url %>
     <%= f.submit %>
   </div>
 <% end %>

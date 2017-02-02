@@ -14,7 +14,10 @@
 
       <tr>
         <td><%= podcast.title %></td>
-        <td> by: <%= podcast.title %></td>
+        <td> by: <%= podcast.host %></td>
+        <td><%= podcast.description %></td>
+        <td><%= podcast.my_review %></td>
+        <td><%= podcast.url %></td>
         <td><%= link_to 'Show', podcast %></td>
         <td><%= link_to 'Edit', edit_podcast_path(podcast) %></td>
         <td><%= link_to 'Destroy', podcast, method: :delete, data: { confirm: 'Are you sure?' } %></td>
