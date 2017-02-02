@@ -11,6 +11,7 @@
 
   <tbody>
     <% @podcasts.each do |podcast| %>
+
       <tr>
         <td><%= link_to 'Show', podcast %></td>
         <td><%= link_to 'Edit', edit_podcast_path(podcast) %></td>

@@ -12,6 +12,8 @@
   <% end %>
 
   <div class="actions">
+    <%= f.text_field :title, class: 'form-control', required: true %>
+    <%= f.text_field :host, class: 'form-control', required: true %>
     <%= f.submit %>
   </div>
 <% end %>

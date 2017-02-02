@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 20170201150441) do
   enable_extension "plpgsql"
 
   create_table "podcasts", force: :cascade do |t|
+    t.string   "title"
+    t.string   "host"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

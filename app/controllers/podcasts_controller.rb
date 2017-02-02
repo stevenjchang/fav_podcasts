@@ -10,6 +10,7 @@ class PodcastsController < ApplicationController
   # GET /podcasts/1
   # GET /podcasts/1.json
   def show
+    
   end
 
   # GET /podcasts/new
