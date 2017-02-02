@@ -12,7 +12,9 @@
   <% end %>
 
   <div class="actions">
+    <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control', required: true %>
+    <%= f.label :host %>
     <%= f.text_field :host, class: 'form-control', required: true %>
     <%= f.submit %>
   </div>
