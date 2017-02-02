@@ -27,4 +27,8 @@ what is inside the model...
 What should you do next?
   done - Lets put in dummy data to see what it looks like
   done - Lets migrate the other categories
-  Lets put dummy data in the seed file
+  done - put in a list of 5 - Lets put dummy data in the seed file
+
+What should you do next?
+  find bootstrap template
+  
