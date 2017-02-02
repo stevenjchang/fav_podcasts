@@ -18,4 +18,5 @@ what is inside the model...
 
 What should you do next?
   done - Lets put in dummy data to see what it looks like
-  Lets migrate the other categories
+  done - Lets migrate the other categories
+  Lets put dummy data in the seed file
