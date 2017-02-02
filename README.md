@@ -30,5 +30,5 @@ What should you do next?
   done - put in a list of 5 - Lets put dummy data in the seed file
 
 What should you do next?
+  install bootstrap gem
   find bootstrap template
-  
