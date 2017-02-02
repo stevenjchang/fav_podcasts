@@ -20,7 +20,27 @@ Podcast.create([
     description: 'A dating advice show',
     my_review: "I don't listen for the advice, I listen just to hear them talk",
     url: 'www.eharmony.com/theloveshow'
-
+  },
+  {
+    title: 'Anna Faris is Unqualified',
+    host: 'Anna Faris',
+    description: 'description',
+    my_review: 'never liked Anna before this, never knew how funny she was',
+    url: 'www.annafaris.com'
+  },
+  {
+    title: 'Accidental Tech Podcast',
+    host: 'Marco Arment, Casey Liss, John Siracusa',
+    description: 'Three nerds discussing tech, Apple, programming, and loosely related matters',
+    my_review: 'they talk and rant about Apple stuff... they go pretty in depth, all 3 guys capable of insights and insightful arguments. Certainly entertaining at times',
+    url: 'www.accidentaltechpodcast.com'
+  },
+  {
+    title: 'Date/able Podcast',
+    host: 'Yue & Michael',
+    description: 'Date/able opens a candid conversation about dating in San Francisco',
+    my_review: 'I like the humor, the topics, and the general modern "millenial" feel to the podcast, even though the hosts are over 30 so I can relate to them just as much',
+    url: 'www.dateablepodcast.com'
   }
 
   ])

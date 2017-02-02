@@ -2,6 +2,10 @@
 
 //how many models do you need, probably 1
 
+#####
+eventually need to make a episodes controller/model for a list of your favorite episodes only
+#####
+
 what is inside the model...
 (example data)
 :podcast
@@ -14,7 +18,11 @@ what is inside the model...
   :image -
     (will this require paperclip?)
   :ranking -
+
   :email -
+  :catchphrase - add a tag line for catchphrase
+  :tags - or hashtags
+  :subscribe button
 
 What should you do next?
   done - Lets put in dummy data to see what it looks like
