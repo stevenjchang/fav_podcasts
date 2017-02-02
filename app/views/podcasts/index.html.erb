@@ -5,7 +5,7 @@
   <h3>container</h3>container
 </div>
 
-<table>
+<table class='table table-condensed'>
   <thead>
     <tr>
       <th colspan="3"></th>
@@ -17,10 +17,13 @@
 
       <tr>
         <td><%= podcast.title %></td>
-        <td> by: <%= podcast.host %></td>
-        <td><%= podcast.description %></td>
-        <td><%= podcast.my_review %></td>
-        <td><%= podcast.url %></td>
+        <td> hosted by: <br><%= podcast.host %></td>
+        <!-- <td><%= podcast.description %></td> -->
+        <td><%= truncate(podcast.description, :length => 30) %></td>
+        <!-- <td><%= podcast.my_review %></td> -->
+        <td><%= truncate(podcast.my_review, :length => 40) %></td>
+        <!-- <td><%= podcast.url %></td> -->
+        <td><%= truncate(podcast.url, :length => 20) %></td>
         <td><%= link_to 'Show', podcast %></td>
         <td><%= link_to 'Edit', edit_podcast_path(podcast) %></td>
         <td><%= link_to 'Destroy', podcast, method: :delete, data: { confirm: 'Are you sure?' } %></td>
