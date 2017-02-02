@@ -14,6 +14,7 @@ what is inside the model...
   :image -
     (will this require paperclip?)
   :ranking -
+  :email - 
 
 What should you do next?
   Lets put in dummy data to see what it looks like

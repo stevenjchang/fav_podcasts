@@ -10,7 +10,7 @@ class PodcastsController < ApplicationController
   # GET /podcasts/1
   # GET /podcasts/1.json
   def show
-    
+
   end
 
   # GET /podcasts/new
@@ -70,6 +70,7 @@ class PodcastsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def podcast_params
-      params.fetch(:podcast, {})
+      # params.fetch(:podcast, {})
+      params.require(:podcast).permit(:title, :host)
     end
 end
