@@ -1,20 +1,21 @@
 <% if current_page?(root_path) %>
-    <header class="intro-header" style="background-image: 
+    <header class="intro-header" style="background-image:
     url('/assets/clean_blog/home-bg.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
+            <div class="col-lg-12 col-md-12">
                 <div class="site-heading">
-                    <h1>Clean Blog</h1>
+                    <h1>Best Podcasts in 2017</h1>
                     <hr class="small">
-                    <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                    <span class="subheading">A List of Steve's Favorite Podcasts</span>
                 </div>
             </div>
         </div>
     </div>
     </header>
 <% elsif current_page?(about_path) %>
-    <header class="intro-header" style="background-image: 
+    <header class="intro-header" style="background-image:
     url('/assets/clean_blog/about-bg.jpg')">
     <div class="container">
         <div class="row">
@@ -29,7 +30,7 @@
     </div>
     </header>
 <% elsif current_page?(post_path) %>
-    <header class="intro-header" style="background-image: 
+    <header class="intro-header" style="background-image:
     url('/assets/clean_blog/post-bg.jpg')">
     <div class="container">
         <div class="row">
@@ -43,8 +44,8 @@
         </div>
     </div>
     </header>
-<% elsif current_page?(contact_path) %> 
-    <header class="intro-header" style="background-image: 
+<% elsif current_page?(contact_path) %>
+    <header class="intro-header" style="background-image:
     url('/assets/clean_blog/contact-bg.jpg')">
     <div class="container">
         <div class="row">

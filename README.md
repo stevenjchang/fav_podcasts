@@ -30,5 +30,7 @@ What should you do next?
   done - put in a list of 5 - Lets put dummy data in the seed file
 
 What should you do next?
-  install bootstrap gem
-  find bootstrap template
+  done - install bootstrap gem
+  done - find bootstrap template
+    clean_blog
+  done - install and integrate clean_blog template 
