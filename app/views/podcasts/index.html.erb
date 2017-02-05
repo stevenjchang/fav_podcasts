@@ -5,7 +5,7 @@
 <%= render 'header' %>
 
 <!-- Main Content -->
-<div class="container-fluid">
+<div class="container">
   <% @podcasts.each do |podcast| %>
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
@@ -33,16 +33,14 @@
   <% end %>
 </div> <!-- container -->
 
-            <!-- Pager -->
-            <div class='col-md-12'>
-            <ul class="pager">
-                <li class="next">
-                    <a href="#">Older Posts &rarr;</a>
-                </li>
-            </ul>
-            </div>
-
-
+<!-- Pager -->
+<div class='col-md-12'>
+  <ul class="pager">
+    <li class="next">
+      <a href="#">Older Posts &rarr;</a>
+    </li>
+  </ul>
+</div>
 
 <br>
 
