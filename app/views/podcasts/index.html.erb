@@ -9,66 +9,36 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <% @podcasts.each do |podcast| %>
-              <div class="post-preview">
-                  <%= link_to best_episodes_path do %>
-                    <h2 class="post-title">
-                      <%= podcast.title %>
-                    </h2>
-                    <% end %>
-                    <h3 class="post-subtitle">
-                      <%= truncate(podcast.description, :length => 30) %>
-                    </h3>
-                    <p><%= truncate(podcast.url, :length => 30) %></p>
-                    <br>
+              <div class='col-md-4'>
+                <img src="http://placehold.it/200x200">
 
-
-
-                  <!-- <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p> -->
-                </div>
-                <hr>
+              </div>
+              <div class="post-preview col-md-8">
+                <%= link_to best_episodes_path do %>
+                  <h2 class="post-title">
+                    <%= podcast.title %>
+                  </h2>
+                  <% end %>
+                  <h3 class="post-subtitle">
+                    <%= truncate(podcast.description, :length => 30) %>
+                  </h3>
+                  <p><%= truncate(podcast.url, :length => 30) %></p>
+                  <br>
+                <!-- <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p> -->
+              </div>
+              <hr>
               <% end %>
-            <hr>
-            <div class="post-preview">
-                <%= link_to best_episodes_path do %>
-                    <h2 class="post-title">
-                        I believe every human has a finite number of heartbeats. I dointend to waste any of mine.
-                    </h2>
-                <% end %>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
             </div>
             <hr>
-            <div class="post-preview">
-                <%= link_to best_episodes_path do %>
-                    <h2 class="post-title">
-                        Science has not yet mastered prophecy
-                    </h2>
-                    <h3 class="post-subtitle">
-                        We predict too much for the next year and yet far too little the next ten.
-                    </h3>
-                <% end %>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on Aug24, 2014</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <%= link_to best_episodes_path do %>
-                    <h2 class="post-title">
-                        Failure is not an option
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Many say exploration is part of our destiny, but it’s actuaour duty to future generations.
-                    </h3>
-                <% end %>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July2014</p>
-            </div>
-            <hr>
+
             <!-- Pager -->
             <ul class="pager">
                 <li class="next">
                     <a href="#">Older Posts &rarr;</a>
                 </li>
             </ul>
-        </div>
-    </div>
+
+    </div> <!-- row -->
 </div>
 
 <br>
