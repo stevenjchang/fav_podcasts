@@ -5,31 +5,33 @@
 <%= render 'header' %>
 
 <!-- Main Content -->
-<div class="container">
+<div class="container-fluid">
+  <% @podcasts.each do |podcast| %>
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <% @podcasts.each do |podcast| %>
-              <div class='col-md-4'>
-                <img src="http://placehold.it/200x200">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+        <div class='col-md-4'>
+          <img src="http://placehold.it/200x200">
+          <!-- <img src="https://i1.sndcdn.com/avatars-000188612170-khcg41-t500x500.jpg" height="200" width="200"> -->
+        </div>
+        <div class="post-preview col-md-8">
+          <%= link_to best_episodes_path do %>
+            <h2 class="post-title">
+              <%= podcast.title %>
+            </h2>
+            <% end %>
+            <h3 class="post-subtitle">
+              <%= truncate(podcast.description, :length => 30) %>
+            </h3>
+            <p><%= truncate(podcast.url, :length => 30) %></p>
+            <br>
+          <!-- <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p> -->
+        </div>
 
-              </div>
-              <div class="post-preview col-md-8">
-                <%= link_to best_episodes_path do %>
-                  <h2 class="post-title">
-                    <%= podcast.title %>
-                  </h2>
-                  <% end %>
-                  <h3 class="post-subtitle">
-                    <%= truncate(podcast.description, :length => 30) %>
-                  </h3>
-                  <p><%= truncate(podcast.url, :length => 30) %></p>
-                  <br>
-                <!-- <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p> -->
-              </div>
-              <hr>
-              <% end %>
-            </div>
-            <hr>
+      </div>
+    </div> <!-- row -->
+    <hr>
+  <% end %>
+</div> <!-- container -->
 
             <!-- Pager -->
             <div class='col-md-12'>
@@ -40,8 +42,7 @@
             </ul>
             </div>
 
-    </div> <!-- row -->
-</div>
+
 
 <br>
 
