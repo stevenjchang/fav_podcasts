@@ -35,4 +35,11 @@ what is inside the model...
   done - install bootstrap gem
   done - find bootstrap template
     clean_blog
-  done - install and integrate clean_blog template 
+  done - install and integrate clean_blog template
+
+##What should you do next?
+  done - add mailing list to _footer_
+  done - add 200x200 img placeholder
+
+##What should you do next?
+## Store Image to db without paperclip
