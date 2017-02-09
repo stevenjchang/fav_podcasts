@@ -10,6 +10,7 @@ class DocumentsController < ApplicationController
   # GET /documents/1
   # GET /documents/1.json
   def show
+
   end
 
   # GET /documents/new
@@ -68,6 +69,10 @@ class DocumentsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
+    # def document_params
+    #   params.require(:document).permit(:file)
+    # end
+
     def document_params
       params.require(:document).permit(:filename, :content_type, :file_contents)
     end
